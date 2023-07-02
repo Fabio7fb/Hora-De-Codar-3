@@ -1,0 +1,18 @@
+<script> _ _
+        deixe  notas  =  [ ] ;
+        deixe  nota ;
+
+        
+        for  ( deixe  i  =  1 ;  i  <=  6 ;  i ++ )  {
+        fazer  {
+            nota  =  parseFloat ( prompt ( `Digite uma nota ${ i } (0 a 10):` ) ) ;
+        }  while  ( nota  <  0  ||  nota  >  10 ) ; 
+        notas . empurre ( nota ) ;
+        }
+
+        
+        deixe  media  =  notas . reduzir ( ( total ,  nota )  =>  total  +  nota ,  0 )  /  notas . comprimento ;
+
+        
+        documento . write ( ʻA média do aluno é $ { media.toFixed ( 2 ) } ` ) ;
+</ script >
